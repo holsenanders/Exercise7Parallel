@@ -1,0 +1,15 @@
+{
+  // clangd runs on Snotra (Remote-SSH window), reading the generated .clangd
+  // file for the cluster's real CUDA paths.
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=never",
+    "--completion-style=detailed"
+  ],
+  "clangd.checkUpdates": false,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "files.associations": { "*.cu": "cuda-cpp" },
+  "files.exclude": { "data/": true, "images/": true },
+  "search.exclude": { "data/": true, "images/": true }
+}
